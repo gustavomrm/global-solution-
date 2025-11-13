@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ============================
+   Estilos globais da ReSkillAI
+   ============================ */
+
+/* Fonte padrão e cor base */
+body {
+  @apply bg-gray-50 text-gray-800 font-sans;
+}
+
+/* Links */
+a {
+  @apply text-blue-600 hover:text-blue-700 transition-colors;
+}
+
+/* Botões padrão */
+button {
+  @apply px-4 py-2 bg-blue-600 text-white rounded-lg font-medium hover:bg-blue-700 active:scale-95 transition-all;
+}
+
+/* Títulos principais */
+h1, h2, h3, h4, h5, h6 {
+  @apply font-semibold text-gray-900;
+}
+
+/* Container padrão de página */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Cartões e seções */
+.card {
+  @apply bg-white shadow-md rounded-xl p-6 border border-gray-100 hover:shadow-lg transition-shadow;
+}
+
+/* Inputs e formulários */
+input, select, textarea {
+  @apply border border-gray-300 rounded-md px-3 py-2 w-full focus:ring-2 focus:ring-blue-500 focus:border-blue-500 outline-none transition-all;
+}
+
+/* Layout principal */
+.main-layout {
+  @apply min-h-screen flex flex-col justify-between;
+}
+
+/* Rodapé */
+footer {
+  @apply bg-gray-900 text-gray-100 py-6 text-center text-sm;
+}
