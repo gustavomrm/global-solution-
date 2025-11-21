@@ -26,9 +26,12 @@ export default function Header() {
           <Link to="/sobre" className="text-sm font-medium text-neutral-900 hover:text-primary-500 transition">
             Sobre
           </Link>
-          <button className="px-lg py-2 rounded-md bg-primary-500 text-accent-white text-sm font-medium hover:bg-primary-600 transition">
+          <Link
+            to="/login"
+            className="px-lg py-2 rounded-md bg-primary-500 text-accent-white text-sm font-medium hover:bg-primary-600 transition"
+          >
             Entrar
-          </button>
+          </Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -55,9 +58,12 @@ export default function Header() {
           <Link to="/sobre" className="block text-sm font-medium text-neutral-900 hover:text-primary-500 py-2">
             Sobre
           </Link>
-          <button className="w-full px-lg py-2 rounded-md bg-primary-500 text-accent-white text-sm font-medium hover:bg-primary-600 transition">
+          <Link
+            to="/login"
+            className="block w-full px-lg py-2 rounded-md bg-primary-500 text-accent-white text-sm font-medium hover:bg-primary-600 transition text-center"
+          >
             Entrar
-          </button>
+          </Link>
         </nav>
       )}
     </header>

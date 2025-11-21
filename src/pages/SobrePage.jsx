@@ -3,10 +3,9 @@ import Footer from '../components/Footer'
 
 export default function SobrePage() {
   const equipe = [
-    { nome: 'Maria Silva', cargo: 'Product Lead', bio: 'Especialista em educação e IA' },
-    { nome: 'João Santos', cargo: 'Tech Lead', bio: 'Engenheiro de software sênior' },
-    { nome: 'Ana Costa', cargo: 'Design Lead', bio: 'Especialista em UX/UI' },
-    { nome: 'Carlos Oliveira', cargo: 'IA & ML Specialist', bio: 'Pesquisador em inteligência artificial' }
+    { nome: 'Luiz Guedes', rm: 'RM 565843', bio: 'Desenvolvimento Front-End' },
+    { nome: 'Gustavo Mendes', rm: 'RM 565807', bio: 'Desenvolvimento Full-Stack' },
+    { nome: 'Enzo Ricarte', rm: 'RM 566053', bio: 'Design e UX/UI' }
   ]
 
   return (
@@ -76,14 +75,14 @@ export default function SobrePage() {
         {/* Equipe */}
         <section className="mb-3xl">
           <h2 className="text-3xl font-bold text-neutral-900 mb-lg">Equipe de Desenvolvimento</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-lg">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-lg">
             {equipe.map((membro, idx) => (
               <div key={idx} className="bg-neutral-50 rounded-lg p-lg text-center">
                 <div className="w-16 h-16 rounded-full bg-primary-200 flex items-center justify-center mx-auto mb-md text-2xl font-bold text-primary-600">
                   {membro.nome[0]}
                 </div>
                 <h3 className="font-bold text-neutral-900 text-sm">{membro.nome}</h3>
-                <p className="text-primary-600 text-xs font-semibold mb-2">{membro.cargo}</p>
+                <p className="text-primary-600 text-xs font-semibold mb-2">{membro.rm}</p>
                 <p className="text-neutral-600 text-xs">{membro.bio}</p>
               </div>
             ))}

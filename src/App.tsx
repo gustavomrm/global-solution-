@@ -5,6 +5,7 @@ import HomePage from './pages/HomePage'
 import PerfilPage from './pages/PerfilPage'
 import DashboardPage from './pages/DashboardPage'
 import SobrePage from './pages/SobrePage'
+import LoginPage from './pages/LoginPage'
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/perfil" element={<PerfilPage />} />
           <Route path="/trilhas" element={<DashboardPage />} />
           <Route path="/sobre" element={<SobrePage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
         <Chatbot />
       </div>
